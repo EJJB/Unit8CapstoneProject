@@ -1,11 +1,25 @@
 /* Universal Styles */
 
 html {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   background-color: white;
 }
 
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
 
 /*Header*/
 header {
@@ -19,7 +33,6 @@ nav {
   height: 2rem 0;
   padding: 1rem 0;
   color: black;
-  background-color: yellow;
 }
 
 nav div {
@@ -32,9 +45,6 @@ nav img {
   margin-left: 1.5rem;
 }
 
-div {
-  text-transform: capitalize;
-}
 
 nav ul {
   margin-right: 1.5rem;
@@ -47,10 +57,48 @@ nav li {
 
 /*Banner*/
 
-.banner {
-background-color: lightgrey;
+.learn-new {
+  background-color: lightgrey;
+  padding: 2rem 1.5rem;
+  justify-content: space-around;
+  border: blue solid 3px;
 }
 
-h1{
-  font-size: 2rem;
+.banner-image img {
+  width: 60%;
+  border: red solid 3px;
+}
+
+.learn {
+  border: yellow 3px solid;
+  display: flex;
+}
+
+.start-here{
+display: flex;
+flex-direction: column;
+margin-left: 1.5rem;
+align-items: center;
+border: green dashed 3px;
+}
+
+.blurb {
+  display: flex;
+  flex-direction: column;
+  border: black solid 2px;
+}
+.button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  width: 100%;
+  align-content: center;
+  border: orange solid 2px;
+}
+
+/*Information*/
+
+.information{
+  display: flex;
 }
