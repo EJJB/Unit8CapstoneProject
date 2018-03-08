@@ -45,7 +45,6 @@ nav img {
   margin-left: 1.5rem;
 }
 
-
 nav ul {
   margin-right: 1.5rem;
 }
@@ -60,7 +59,7 @@ nav li {
 .learn-new {
   background-color: lightgrey;
   padding: 2rem 1.5rem;
-  justify-content: space-around;
+
   border: blue solid 3px;
 }
 
@@ -101,4 +100,49 @@ border: green dashed 3px;
 
 .information{
   display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  border: dashed 3px green;
 }
+
+.keep-practicing {
+  display: flex;
+  flex-direction: column;
+  border: red solid 2px;
+}
+
+.practicing-content h1{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.keep-practicing img{
+  width: 60%;
+}
+
+.info-column2 {
+  display: flex;
+}
+
+.container1{
+  display: flex;
+
+  border: solid blue 3px
+}
+
+.container1 img{
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.container1 .info-content{
+  width: 65%;
+}
+
+.container1 a{
+  color: blue;
+}
+
+/*Courses*/
