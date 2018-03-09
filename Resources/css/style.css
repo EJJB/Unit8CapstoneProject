@@ -4,6 +4,7 @@ html {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   background-color: white;
+  color: black;
 }
 
 h1{
@@ -19,6 +20,119 @@ h2{
 body{
   display: flex;
   flex-direction: column;
+}
+
+.column-wrap{
+  display: flex;
+}
+
+.section-heading h1{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+/*Column 1*/
+.column1{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  overflow: hidden;
+  border: red solid 2px;
+}
+
+.column1 img{
+  display:block;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.column1-content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.5rem
+}
+
+.column1 h1{
+  padding-bottom: 1.5rem;
+}
+
+.column1 h2{
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.column1 h4{
+  padding-bottom: 2rem;
+}
+
+.column1 p{
+  padding-bottom: 2rem;
+}
+
+/*Column2*/
+.column2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-left: 1.5rem;
+  padding-top: 2rem;
+  border: black solid 3px;
+}
+
+.column2-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  border: green solid 3px;
+}
+
+.column2 .container1{
+  border: orange solid 3px;
+  width: 100%;
+}
+
+.column2 img{
+  height: auto;
+}
+
+.column2 h1{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.column2 h2{
+  padding-
+}
+
+.column2 h3{
+
+}
+
+.column2 p{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.container1{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border: solid orange 3px;
+}
+
+.container1-img{
+  height: auto;
+  margin: 1rem;
+}
+
+.container1-content{
+  width: 65%;
+  border: red solid 3px;
 }
 
 /*Header*/
@@ -58,91 +172,81 @@ nav li {
 
 .learn-new {
   background-color: lightgrey;
-  padding: 2rem 1.5rem;
-
   border: blue solid 3px;
 }
 
-.banner-image img {
-  width: 60%;
-  border: red solid 3px;
-}
 
-.learn {
-  border: yellow 3px solid;
-  display: flex;
-}
 
-.start-here{
-display: flex;
-flex-direction: column;
-margin-left: 1.5rem;
-align-items: center;
-border: green dashed 3px;
-}
-
-.blurb {
-  display: flex;
-  flex-direction: column;
-  border: black solid 2px;
-}
 .button {
-  background-color: black;
+  display: flex;
+  background-color: darkgrey;
   color: white;
   font-weight: bold;
-  padding: 0.5rem 0;
-  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  width: 55%;
+  justify-content: center;
   align-content: center;
-  border: orange solid 2px;
 }
 
 /*Information*/
 
 .information{
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1.5rem;
   border: dashed 3px green;
 }
 
-.keep-practicing {
+/*Courses*/
+
+.courses{
   display: flex;
   flex-direction: column;
-  border: red solid 2px;
+  background-color: lightgrey;
+  border: green dotted 2px;
+  width: 100%;
 }
 
-.practicing-content h1{
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-}
-
-.keep-practicing img{
-  width: 60%;
-}
-
-.info-column2 {
+.row {
   display: flex;
+  padding: 2rem 4.5rem;
 }
 
-.container1{
+.course-type {
   display: flex;
-
-  border: solid blue 3px
+  background-color: white;
+  flex-direction:column;
+  margin: 1rem;
+  border: red solid 3px;
 }
 
-.container1 img{
-  width: 35%;
+.course-type img{
+  width: 100%;
   height: auto;
-  padding: 1rem;
 }
 
-.container1 .info-content{
-  width: 65%;
+.course-type h2 {
+  margin: 1rem;
 }
 
-.container1 a{
-  color: blue;
+.course-type p {
+  width: 75%;
+  margin: 0.5rem 1rem;
 }
 
-/*Courses*/
+
+/*Thesis exhibit*/
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  border: red dashed 3px;
+}
+
+
+.thesis-heading h1{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
