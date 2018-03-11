@@ -24,11 +24,11 @@ body{
 
 .column-wrap{
   display: flex;
+  width: 100%;
   padding-bottom: 2rem;
-  border: solid orange 3px
 }
 
-.section-heading h1{
+.section-heading-desktop h1{
   display: flex;
   justify-content: center;
   padding-top: 2rem;
@@ -43,7 +43,6 @@ body{
   width: 60%;
   height: auto;
   padding-left: 1.5rem;
-  border: red solid 2px;
 }
 
 .container1{
@@ -106,14 +105,12 @@ video {
   justify-content: center;
   width: 40%;
   margin-left: 1.5rem;
-  border: black solid 3px;
 }
 
 .column2-content{
   display: flex;
   flex-direction: column;
   width: 57%;
-  border: green solid 3px;
 }
 
 .column2 h1{
@@ -135,7 +132,6 @@ video {
   display: flex;
   align-items: center;
   width: 100%;
-  border: pink solid 3px;
 }
 
 .container2-img-desktop{
@@ -152,7 +148,11 @@ video {
 
 .container2-content{
   width: 65%;
-  margin-left: 1rem;
+  height:auto;
+  padding-left: 1rem;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .highlight{
@@ -174,7 +174,7 @@ nav {
   justify-content: space-between;
   height: 2rem 0;
   padding: 1rem 0;
-  color: black;
+  color: #4a4a4a;
 }
 
 nav div {
@@ -233,7 +233,6 @@ header .mobile li {
 
 .learn-new {
   background-color: lightgrey;
-  border: blue solid 3px;
   width: 100%;
 }
 
@@ -244,7 +243,7 @@ header .mobile li {
   font-weight: bold;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
   width: 100%;
   justify-content: center;
   align-content: center;
@@ -292,6 +291,10 @@ header .mobile li {
 
 .button{
   width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  background-color: grey;
 }
 
 }
@@ -300,7 +303,6 @@ header .mobile li {
 
 .information{
   display: flex;
-  border: dashed 3px green;
 }
 
 .mobile-img{
@@ -309,12 +311,24 @@ header .mobile li {
 
 @media only screen and (max-width: 470px) {
 
-.column1{
+.information{
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.information .column-wrap .column1{
   display: none;
 }
 
 .container2{
   flex-flow: column;
+  width: 100%;
+  padding-bottom: 4rem;
+}
+
+.highlight .container2{
+  background-color: white;
+  padding-bottom: 0;
 }
 
 .desktop-img{
@@ -336,9 +350,8 @@ img {
   margin: 2rem 0;
 }
 
-.highlight{
-  background-color: white;
-}
+.column2-border{
+border-left: none;
 
 }
 
@@ -348,7 +361,6 @@ img {
   display: flex;
   flex-direction: column;
   background-color: lightgrey;
-  border: green dotted 2px;
   width: 100%;
 }
 
@@ -386,6 +398,20 @@ img {
 
 .courses{
   background-color: white;
+  border-top: lightgrey solid 1px;
+  border-bottom: lightgrey solid 1px;
+}
+
+.course-options{
+  margin-bottom: 2rem;
+}
+
+.course-type{
+  width: auto;
+  margin:0 1rem;
+}
+.course-type p{
+  display: none;
 }
 
 .course-list{
@@ -396,30 +422,28 @@ img {
   display: none;
 }
 
-.course-type{
-  width: 100%;
-}
-.course-type p{
-  display: none;
-}
-
 .row{
   flex-flow: column;
-  width: 100%;
+  width: auto;
+  margin: 0 1rem;
 }
 
-.section-heading h1{
-  border: solid grey 3px;
+.section-heading-desktop h1{
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
 
 .course-type h2{
   background-color: lightgrey;
-  width: 100%;
+  width: auto;
+  align-items: center;
   padding-left: 1rem;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0.5rem;
 }
 
 }
@@ -429,16 +453,55 @@ img {
 .thesis {
   display: flex;
   flex-direction: column;
-  border: blue dashed 3px;
 }
 
-.thesis-heading h1{
+.section-heading-desktop h1{
   display: flex;
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
+.section-heading-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+
+.thesis{
+  flex-flow: column;
+  }
+
+.heading-container .section-heading-desktop{
+  display: none;
+}
+
+.heading-container .section-heading-mobile{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+
+.container1-video{
+  margin-bottom: 1.5rem;
+}
+
+video{
+  border-top: lightgrey solid 1px;
+  border-bottom: lightgrey solid 1px;
+}
+
+.thesis .column-wrap .column1-content {
+  display: none;
+}
+
+.thesis .column2 {
+  display: none;
+}
+
+}
 
 
 /*Footer*/
@@ -452,9 +515,23 @@ footer {
 
 .tandp li{
     display: inline;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 footer p{
   font-size: 14px;
+}
+
+@media only screen and (max-width: 470px) {
+
+footer{
+  border-top: none;
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+.tandp{
+  display: none;
+}
+
 }
