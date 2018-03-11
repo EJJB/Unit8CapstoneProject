@@ -4,7 +4,7 @@ html {
   font-family: "Arial", serif;
   font-size: 16px;
   background-color: white;
-  color: black;
+  color: #4a4a4a;
 }
 
 h1{
@@ -239,7 +239,7 @@ header .mobile li {
 
 .button {
   display: flex;
-  background-color: grey;
+  background-color: #4a4a4a;
   color: white;
   font-weight: bold;
   padding-top: 0.5rem;
@@ -249,6 +249,8 @@ header .mobile li {
   justify-content: center;
   align-content: center;
 }
+
+/*Mobile Banner*/
 
 @media only screen and (max-width: 470px) {
 .column-wrap {
@@ -301,6 +303,10 @@ header .mobile li {
   border: dashed 3px green;
 }
 
+.mobile-img{
+  display: none;
+}
+
 @media only screen and (max-width: 470px) {
 
 .column1{
@@ -311,17 +317,31 @@ header .mobile li {
   flex-flow: column;
 }
 
-.container2-img-desktop{
+.desktop-img{
   display: none;
 }
 
-.container2-img-mobile{
+.mobile-img{
+  display: inline-block;
+}
+
+img {
   width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
+.container2-content{
+  padding: 1rem;
+  margin: 2rem 0;
+}
 
+.highlight{
+  background-color: white;
+}
 
 }
+
 /*Courses*/
 
 .courses{
@@ -362,6 +382,47 @@ header .mobile li {
   margin: 0.5rem 1rem;
 }
 
+@media only screen and (max-width: 470px) {
+
+.courses{
+  background-color: white;
+}
+
+.course-list{
+  display: none;
+}
+
+.course-content{
+  display: none;
+}
+
+.course-type{
+  width: 100%;
+}
+.course-type p{
+  display: none;
+}
+
+.row{
+  flex-flow: column;
+  width: 100%;
+}
+
+.section-heading h1{
+  border: solid grey 3px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.course-type h2{
+  background-color: lightgrey;
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+}
 
 /*Thesis exhibit*/
 
